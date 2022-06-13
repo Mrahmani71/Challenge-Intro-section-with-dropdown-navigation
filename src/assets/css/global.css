@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import "./_colors.css";
+
+* > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  cursor: default;
+}
+
+#root {
+  min-block-size: 100%;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  min-block-size: 100%;
+  font-size: 18px;
+  font-family: system-ui, sans-serif;
+  gap: 5vmax;
+}
+
+html {
+  block-size: 100%;
+  background-color: var(--surface1);
+  color: var(--text1);
+}
+
+
+main {
+  gap: 10vmax 10vmin;
+}
+
+
+.brand {
+  color: var(--brand);
+  background-color: var(--brand);
+}
+
+.surface1 {
+  background-color: var(--surface1);
+  color: var(--text2);
+}
+
+.surface2 {
+  background-color: var(--surface2);
+  color: var(--text2);
+}
+
+.surface3 {
+  background-color: var(--surface3);
+  color: var(--text1);
+}
+
+.surface4 {
+  background-color: var(--surface4);
+  color: var(--text1);
+}
+
+.text1 {
+  color: var(--text1);
+}
+
+
+.text2 {
+  color: var(--text2);
+}
+
+
+.container { padding-inline: 15px; }
+
+
+@media (min-width: 600px) {
+
+  .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .container { max-width: 720px; }
+
+}
+
+@media (min-width: 992px) {
+
+  .container { max-width: 970px; }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .container { max-width: 1200px; }
+
+
+}

@@ -1,0 +1,146 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 3em;
+}
+
+.image {
+  width: max-content;
+  max-width: 100%;
+  order: 1;
+}
+
+.content {
+  text-align: center;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 1em;
+}
+
+.content > h1 {
+  font-size: 3em;
+  color: var(--brand);
+  text-align: left;
+}
+
+.content > p {
+  color: var(--text1);
+  line-height: 1.5em;
+}
+
+.content > button {
+  width: max-content;
+  margin-inline: auto;
+  border: 1px solid var(--brand);
+  background-color: var(--brand);
+  color: var(--surface1);
+  padding: 1em;
+  outline: none;
+  border-radius: 0.5em;
+  margin: 1em 0 1.5em;
+  font-weight: 700;
+  font-size: 1em;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.content > button:hover {
+  background: transparent;
+  color: var(--brand);
+  background-color: 1px solid black;
+}
+
+.colleagues {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  column-gap: 1em;
+  padding-inline: 1em;
+  max-width: 100%;
+}
+
+.colleagues > div {
+  column-span: 1fr;
+}
+
+.colleagues > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.image > img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    column-gap: 2em;
+    align-items: unset;
+  }
+  .content {
+    order: 1;
+    width: calc(50% - 1em);
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+
+  .content > h1 {
+    font-size: 2.8em;
+  }
+  
+
+  .content > p {
+    text-align: left;
+    padding-right: 2em;
+  }
+
+  .image {
+    order: 2;
+    width: calc(50% - 1em);
+    display: flex;
+    justify-content: center;
+  }
+
+  .image > img {
+    max-width: 400px;
+  }
+  .colleagues {
+    padding-inline: 0;
+  }
+  
+
+}
+
+@media (min-width: 992px) {
+  .hero {
+    column-gap: 0;
+  }
+
+  .content > h1 {
+    font-size: 3em;
+  }
+
+  .content > p {
+    padding-right: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content > h1 {
+    font-size: 3.5em;
+  }
+  .content > p {
+    padding-right: 6em;
+  }
+}

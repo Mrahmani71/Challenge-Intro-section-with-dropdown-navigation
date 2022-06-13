@@ -1,0 +1,23 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.drop_item {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: 1em;
+  column-gap: 10px;
+  color: var(--text1);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.drop_item:hover {
+  color: var(--text2);
+}
