@@ -138,14 +138,25 @@
 
 @media (min-width: 768px) {
 
+  .navbar {
+    justify-content: flex-start;
+  }
+
   .ul_links {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     background-color: transparent;
-    transform: 0;
+    transform: unset;
     height: max-content;
     position: relative;
+    column-gap: 1em;
+  }
+
+  .connect {
+    flex-direction: row;
+    column-gap: 1em;
+    margin-left: auto;
   }
 
   .hamber_menu {
