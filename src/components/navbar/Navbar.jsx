@@ -8,18 +8,10 @@ import DropdownFeatures from "../dropdown/DropdownFeatures"
 
 import menu from "../../assets/images/icon-menu.svg"
 import closeMenu from "../../assets/images/icon-close-menu.svg"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 export default function Navbar() {
   const [toggle, setToggle] = useState(true)
 
-  // useEffect(() => {
-  //   const menu = document.querySelector('.nav_menu')
-  //   if(toggle) {
-  //     menu.classList.add('show')
-  //   } else {
-  //     menu.classList.remove('show')
-  //   }
-  // },[toggle])
 
   function handleToggle() {
     setToggle(!toggle)
