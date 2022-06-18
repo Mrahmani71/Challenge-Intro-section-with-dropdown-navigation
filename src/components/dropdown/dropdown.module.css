@@ -4,6 +4,7 @@
   row-gap: 1em;
   align-items: flex-start;
   text-align: left;
+  padding: 1em;
 }
 
 .drop_item {
@@ -13,11 +14,11 @@
   justify-content: space-between;
   color: 1em;
   column-gap: 10px;
-  color: var(--text1);
-  transition: .3s;
+  color: var(--text2);
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .drop_item:hover {
-  color: var(--text2);
+  color: var(--text1);
 }

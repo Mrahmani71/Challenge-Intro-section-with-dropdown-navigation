@@ -26,7 +26,7 @@
 
 .content > h1 {
   font-size: 3em;
-  color: var(--brand);
+  color: var(--text1);
   text-align: left;
 }
 
@@ -40,7 +40,7 @@
   margin-inline: auto;
   border: 1px solid var(--brand);
   background-color: var(--brand);
-  color: var(--surface1);
+  color: var(--text1);
   padding: 1em;
   outline: none;
   border-radius: 0.5em;
